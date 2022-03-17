@@ -4,12 +4,17 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
+const videosRoute = require('./routes/videos-route');
+
 app.use(bodyParser.json());
 
 const port = 5569;
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
+app.use('/api/videos', videosRoute);
+
+app.use((req, res, next) => {
+  const error = new HttpError('Could not find this route', 404);
+  throw error;
 });
 
 mongoose
