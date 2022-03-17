@@ -1,0 +1,32 @@
+{
+  "name": "zootubebff-projectmanagement",
+  "version": "1.0.0",
+  "description": "ZOOTUBE-bff is a server-side application for [Zootube - website](https://github.com/tonysodeep/Zootube-Web-React). \r Zootube-bff provides basic routing and data transforming between the website and backend service.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonysodeep/ZootubeBFF-ProjectManagement.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonysodeep/ZootubeBFF-ProjectManagement/issues"
+  },
+  "homepage": "https://github.com/tonysodeep/ZootubeBFF-ProjectManagement#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "body-parser": "^1.19.2",
+    "cloudinary": "^1.28.1",
+    "express": "^4.17.3",
+    "express-validator": "^6.14.0",
+    "mongoose": "^6.2.7",
+    "mongoose-unique-validator": "^3.0.0",
+    "multer": "^1.4.4",
+    "uuid": "^8.3.2",
+    "nodemon": "^2.0.15"
+  }
+}
