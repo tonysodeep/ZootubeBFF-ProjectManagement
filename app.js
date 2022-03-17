@@ -5,12 +5,14 @@ const bodyParser = require('body-parser');
 const app = express();
 
 const videosRoute = require('./routes/videos-route');
+const userRoute = require('./routes/users-route');
 
 app.use(bodyParser.json());
 
 const port = 5569;
 
 app.use('/api/videos', videosRoute);
+app.use('/api/users', userRoute);
 
 app.use((req, res, next) => {
   const error = new HttpError('Could not find this route', 404);
