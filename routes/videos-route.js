@@ -2,7 +2,7 @@ const express = require('express');
 
 const { check } = require('express-validator');
 
-const videoController = require('../controllers/videos-controller');
+const videoController = require('../controllers/videos-controllers');
 
 const fileUpload = require('../middleware/file-upload');
 
