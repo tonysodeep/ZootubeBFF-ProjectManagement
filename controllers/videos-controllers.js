@@ -1,5 +1,4 @@
 const { validationResult } = require('express-validator');
-const cloudinary = require('../cloudinary');
 
 const HttpError = require('../models/http-errors');
 const Video = require('../models/video');
@@ -88,13 +87,13 @@ const createVideo = async (req, res, next) => {
   const { title, description, creator } = req.body;
 
   //cái này mo phong lúc  uppload video lên s3 rồi lấy video url
-  try {
-    const uploader = await cloudinary.uploads(req.file.path, 'Images');
-    console.log('uploader', uploader);
-  } catch (err) {
-    console.log(err);
-    return next(new HttpError('error when upload image', 500));
-  }
+  // try {
+  //   const uploader = await cloudinary.uploads(req.file.path, 'Images');
+  //   console.log('uploader', uploader);
+  // } catch (err) {
+  //   console.log(err);
+  //   return next(new HttpError('error when upload image', 500));
+  // }
 
   let resource = {
     imageUrl: req.file.path,
