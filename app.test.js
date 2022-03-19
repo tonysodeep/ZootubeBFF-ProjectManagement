@@ -10,3 +10,9 @@ describe('/test end point', () => {
     expect(response.text).toBe('Hello world');
   });
 });
+
+// describe("Calculator tests", () => {
+//   test('adding 1 + 2 should return 3', () => {
+//     expect(mathOperations.sum(1, 2)).toBe(3);
+//   });
+// })
