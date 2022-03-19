@@ -4,7 +4,7 @@
   "description": "ZOOTUBE-bff is a server-side application for [Zootube - website](https://github.com/tonysodeep/Zootube-Web-React). \r Zootube-bff provides basic routing and data transforming between the website and backend service.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest app.test.js",
     "start": "nodemon app.js"
   },
   "repository": {
@@ -26,7 +26,11 @@
     "mongoose": "^6.2.7",
     "mongoose-unique-validator": "^3.0.0",
     "multer": "^1.4.4",
-    "uuid": "^8.3.2",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "supertest": "^6.2.2"
   }
 }

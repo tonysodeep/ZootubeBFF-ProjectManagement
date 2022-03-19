@@ -24,8 +24,14 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get('/test', (req, res) => {
+  res.status(200).send('Hello world');
+});
+
 app.use('/api/videos', videosRoute);
 app.use('/api/users', userRoute);
+
+
 
 //send error cho route ko tìm thấy
 app.use((req, res, next) => {
