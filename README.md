@@ -17,7 +17,8 @@ Zootube-bff provides basic routing and data transforming between the website and
 - [Built with](#fire-built-with)
 - [Versioning](#pencil2-versioning)
 - [Authors](#fireworks-authors)
-- [Runbook](#runbook)
+- [Runbook](#blue_book-runbook)
+- [Deloyment](#rocket-deloyment)
 
 
 ## :star: Getting started
@@ -79,7 +80,8 @@ npm start
 4. [axios](https://github.com/axios/axios)
 5. [mongoose](https://github.com/Automattic/mongoose)
 6. [express-validator](https://express-validator.github.io/docs/)
-
+7. [jest](https://www.npmjs.com/package/jest)
+8. [cloudinary](https://www.npmjs.com/package/cloudinary)
 
 ## :pencil2: Versioning.
 
@@ -91,6 +93,13 @@ Current version 0.0.1
 **Dương Thanh Như**</br>
 **Nguyễn Thị Hà Xuân**
 
-## Runbook
+## :blue_book: Runbook
  
 [Runbook](https://github.com/tonysodeep/ZootubeBFF-ProjectManagement/wiki) is situated in project's wiki.
+
+## :rocket: Deloyment
+ 
+Heroku Pipelines, Review Apps, and GitHub Integration features now work together with CI in an intuitive, fully visual interface. And tests run fast, in automatically created, disposable environments that match your staging and production apps.
+
+### CI github action
+### CD heroku
