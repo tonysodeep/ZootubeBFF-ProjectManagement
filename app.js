@@ -26,6 +26,9 @@ app.use((req, res, next) => {
 
 app.use('/api/videos', videosRoute);
 app.use('/api/users', userRoute);
+app.get('/test', (req, res) => {
+  res.status(200).send('Hello world');
+});
 
 //send error cho route ko tìm thấy
 app.use((req, res, next) => {
